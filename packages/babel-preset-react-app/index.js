@@ -80,7 +80,7 @@ if (env === 'test') {
   module.exports = {
     presets: [
       // Latest stable ECMAScript features and for webpack 2
-      [require.resolve('babel-preset-latest'), {modules: false}],
+      [require.resolve('babel-preset-latest'), {es2015: {modules: false}}],
       // JSX, Flow
       require.resolve('babel-preset-react')
     ],
